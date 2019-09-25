@@ -185,7 +185,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CDonne.h" />
     <ClInclude Include="CJoueur.h" />
+    <ClInclude Include="CPartie.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="saisie_points.h" />
     <ClInclude Include="saisie_pointsDlg.h" />
