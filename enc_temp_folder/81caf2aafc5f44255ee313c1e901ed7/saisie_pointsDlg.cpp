@@ -219,6 +219,12 @@ void Csaisie_pointsDlg::envoyerValeur()
 void Csaisie_pointsDlg::OnBnClickedOk()
 {
 	UpdateData(true);
+	creer_partie();
+	lesJoueurs[0] = new CJoueur("jack", 0);
+	lesJoueurs[1] = new CJoueur("jacki", 0);
+	lesJoueurs[2] = new CJoueur("jacko", 0);
+	lesJoueurs[3] = new CJoueur("jacku", 0);
+	laPartie->creerDonnes(lesJoueurs[1]);
 	envoyerValeur();
 	CDialogEx::OnOK();
 }
@@ -226,4 +232,8 @@ void Csaisie_pointsDlg::OnBnClickedOk()
 void Csaisie_pointsDlg::OnCbnSelchangeCombo4()
 {
 		
+}
+void Csaisie_pointsDlg::creer_partie()
+{
+	laPartie = new CPartie(lesJoueurs);
 }

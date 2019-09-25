@@ -185,6 +185,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CJoueur.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="saisie_points.h" />
     <ClInclude Include="saisie_pointsDlg.h" />
@@ -192,6 +193,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CDonne.cpp" />
+    <ClCompile Include="CJoueur.cpp" />
+    <ClCompile Include="CPartie.cpp" />
     <ClCompile Include="saisie_points.cpp" />
     <ClCompile Include="saisie_pointsDlg.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -205,6 +209,7 @@
     <ResourceCompile Include="saisie_points.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="res\saisie_points.rc2" />
   </ItemGroup>
   <ItemGroup>
@@ -213,4 +218,9 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="saisie_points.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

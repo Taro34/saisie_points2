@@ -42,6 +42,8 @@ private:
 	int nbBouts;
 	int testPetit;
 	int testPoignee;
+	CJoueur *lesJoueurs[4];
+	CPartie *laPartie;
 public:
 	CComboBox mComboPetit;
 	CComboBox mComboPoignee;
@@ -49,6 +51,7 @@ public:
 	afx_msg void OnCbnSelchangeCombo2();
 	void envoyerValeur();
 	afx_msg void OnBnClickedOk();
+	void creer_partie();
 	CComboBox mTest;
 	afx_msg void OnCbnSelchangeCombo4();
 };

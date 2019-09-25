@@ -104,3 +104,4 @@ BOOL Csaisie_pointsApp::InitInstance()
 	return FALSE;
 }
 
+
